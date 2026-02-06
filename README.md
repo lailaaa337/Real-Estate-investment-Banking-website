@@ -1,5 +1,9 @@
 # The Lola Group - Real Estate Investment Banking Website
 
+## Preview
+
+![Lola Group Website Preview](Screenshot%202026-02-06%20225345.png)
+
 ## Overview
 
 A sophisticated, responsive website for The Lola Group, a premier real estate investment banking firm. The platform showcases comprehensive capital advisory services, development financing solutions, and the firm's extensive global expertise in complex real estate transactions.
