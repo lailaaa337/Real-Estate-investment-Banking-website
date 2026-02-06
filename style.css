@@ -1,0 +1,859 @@
+nav {
+    background-color: #1E2324; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; 
+}
+
+
+.home, .the, .about, .leader, .serv, .res,.cl,.con{
+    color: white;
+    text-decoration: none;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+
+nav ul .home:hover , .the:hover, .about:hover, .leader:hover, .serv:hover,.res:hover,.cl:hover,.con:hover {
+    color: goldenrod;
+}
+
+.el_logo img {
+    /*display: block;
+    margin-right: 10px; 
+    padding-left: 22%;
+    padding-top: 1%;
+    height: 60px; */
+    height: 80px;
+    margin-right: 15px;
+}
+
+.el_logo {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 22%;
+    height: 100px;
+}
+
+.el_logo h1 {
+    color: goldenrod;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    margin: 0;
+    font-size: 28px;
+    /*padding-left: 27%;
+    padding-bottom: 0;
+    display: flex;
+    text-align: left;*/
+
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.el_logo p {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+}
+
+.el_logo h3 {
+    margin: 5px 0 0 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ .service {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 35px;
+    color: white;
+ }
+
+ .service h1 {
+    display: block;
+    /*text-indent: 12%;*/
+    margin-left: 40px;
+    font-family: 'Montserrat','Times New Roman', Times, serif;
+    font-weight: bold;
+ }
+
+ .service pre {
+    line-height: 2;
+    font-family: 'Georgia','Times New Roman', Times, serif;
+ }
+
+ .btn_exp {
+    display: inline-block;
+    margin-left: 50px;
+    padding: 10px 20px;
+    background-color: #7c9a9a;        
+    color: white;                    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;        
+  }
+  
+  .btn_exp:hover {
+    background-color: gold;          
+    color: black;                     
+  }
+
+.le_kol_el_boxes {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), url('gowa.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 700px;
+    padding: 60px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.le_kol_el_boxes > .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    position: relative; /* change from absolute to relative */
+}
+
+.service {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: none; /* Remove translateY */
+    padding: 20px;
+}
+
+
+/* Grid layout for the right section */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Reduced gap between the grid items */
+    width: 50%; /* Take up 50% of the container */
+    max-width: 600px; /* Max width of the grid */
+    margin-top: 30px;
+    padding-top: 30px; /* Reduced padding on top */
+    justify-items: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+
+/* Service cards in the grid */
+.service-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box style for each card */
+.box-ketaba {
+    background-color: rgba(128, 128, 128, 0.4); /* Transparent gold */
+    width: 100%;
+    padding: 15px 20px; /* Adjusted padding */
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 270px; /* Increased height slightly */
+}
+
+/* Adjust font size and spacing inside the box */
+.box-ketaba h2 {
+    font-size: 20px; /* Increased font size for heading */
+    margin-bottom: 10px; /* Space between heading and paragraph */
+    color: goldenrod;
+}
+
+.box-ketaba p {
+    font-size: 14px; /* Reduced font size to make text fit */
+    line-height: 1.4; /* Adjusted line height for better spacing */
+    margin: 0; /* Removed extra margin */
+    flex-grow: 1; /* Allow text to fill available space */
+    overflow: hidden; /* Prevents text overflow */
+    color: white;
+}
+
+/* Hover effect to make the boxes grow */
+.box-ketaba:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.box-ketaba {
+    max-width: 350px;
+    width: 100%;
+}
+
+/* View More button */
+.View-more , .View-finance, .View-debt, .View-equity {
+    display: inline-block;
+    padding: 6px 24px;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: #7c9a9a;        
+    color: white;                    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: medium; /* Slightly smaller font size */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap; /* Prevents the button text from wrapping */
+    text-align: center; /* Ensures the text is centered */
+}
+
+/* View More button hover effect */
+.View-more:hover, .View-finance:hover  , .View-debt:hover  , .View-equity:hover{
+    background-color: gold;          
+    color: black;                     
+}
+
+
+
+
+
+
+
+
+
+/* Reduce padding on the button */
+.btn_exp {
+    display: inline-block;
+    margin-left: 50px;
+    padding: 8px 16px; /* Reduced padding */
+    background-color: #7c9a9a;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn_exp:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Video section */
+.videoo {
+    position: relative;
+    margin:0;
+    padding: 0;
+    height: 700px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.videoo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: -15px 0 0 0;
+}
+
+.text-overvid h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+}
+
+.text-overvid h4 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+}
+
+    
+.client {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5; /* Light gray background */
+    margin-left: 0;
+    padding: 50px 0;
+    width: 100%;
+    position: relative;
+}
+
+.client img {
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+
+.client::after {
+    content: "";
+    width: 2px;
+    background-color: white;
+    height: 80%;
+    margin: 0 30px;
+}
+
+.client ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+    margin-top: -40px;
+}
+
+/* "OUR CLIENT COMMITMENT" positioning */
+.client h2 {
+    white-space: nowrap;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2b2b2b; /* Dark gray */
+    margin-bottom: 20px;
+    margin-top: -700px;
+    margin-left: 100px;
+    /* Removed top positioning, so it stays at the default flow above the list */
+}
+
+/* Increased font size of li items slightly */
+.client li {
+    margin-bottom: 12px;
+    font-size: 18px;
+    margin-left: -450px; /* Increased font size */
+}
+
+.client button {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7c9a9a; /* Same as Explore button */
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease; /* Smooth transition */
+    position: relative; /* Make it position relative to its original location */
+    margin-top: 650px;
+    left: -450px; /* Move the button to the left */
+    z-index: 2; /* Ensure the button stays on top if there's overlap */
+}
+
+.client button:hover {
+    background-color: gold; /* Same hover effect as Explore */
+    color: black;
+}
+
+ 
+
+/* Feature Section Background */
+.feature {
+    background-color: #262D2E; /* Dark gray background */
+    padding: 50px 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 30px; /* Space between items */
+}
+
+/* Feature Section Heading */
+.feature h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px; /* Big font size */
+    margin-bottom: 40px; /* Distance between heading and images */
+    grid-column: span 3; /* Make sure the title spans across all columns */
+}
+
+/* Each block (image + description) */
+.feature .awel,
+.feature .tani,
+.feature .talet,
+.feature .rabe3,
+.feature .ames,
+.feature .sades {
+    text-align: center;
+}
+
+/* Image styling */
+.feature img {
+    width: 100%; /* Make the image fill the block */
+    height: auto;
+    margin-bottom: 10px; /* Space between image and paragraph */
+    border-radius: 0; /* Ensure images are not circular */
+}
+
+/* Paragraph styling for the feature items */
+.feature p {
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0; /* Remove margin to keep it tight */
+}
+
+/* Ensure the blocks wrap into two rows with 3 images per row */
+.feature {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 30px; /* Space between items */
+    grid-template-rows: auto auto; /* Ensure it breaks into two rows */
+    margin-top: -50px;/* Align closer to the previous section */
+    margin: 0;
+}
+
+/* View More button styling */
+.feature button {
+    padding: 10px 20px;
+    background-color: #7c9a9a;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 40px;
+    display: block; /* Make sure the button is centered */
+    margin-left: 140%;
+    margin-right: auto;
+    position: relative; /* Allows positioning relative to the container */
+    /*right: 200px; /* Move it to the right */
+    white-space: nowrap;
+}
+
+/* View More button hover effect */
+.feature button:hover {
+    background-color: gold;
+    color: black;
+}
+
+
+
+/*#6B8686*/
+ 
+.bottom {
+    background-color: #6B8686; 
+    color: white;
+    padding: 20px 40px; 
+    text-align: center; 
+ } 
+
+
+/* Styling for the left and right sections */
+.left, .right {
+    display: inline-block; /* Allow both sections to be on the same row */
+    width: 45%; /* Set width to 45% so they take up equal space */
+    vertical-align: top; /* Align them at the top */
+    padding: 15px;
+    color: white;
+    background-color: #6B8686;
+    margin-right: 25px -30px 30px 0;
+    
+}
+
+/* Styling for the <hr> separator */
+hr {
+    border: 0;
+    height: 0.5px;
+    background-color: white; /* White line */
+    margin: 10px 0;
+    margin-top: 0;
+}
+
+/* Styling for the 'Menu' and 'Contact us' headings */
+strong {
+    font-size: 18px;
+    font-weight: bold; /* Make headings bold */
+    display: block;
+    margin-bottom: 10px; /* Space between heading and list */
+}
+
+/* Styling for the <ul> lists */
+ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+/* Styling for each <li> in the lists */
+ul li {
+    margin: 8px 0;
+    font-size: 14px; /* Adjusted font size for the list items */
+}
+
+
+/* Reduced height of the footer and increased its width */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262D2E; /* Original background color */
+    color: white;
+    width: 101.4%; /* Full width across the page */
+    height: 80px; /* Reduced height */
+    padding: 0;
+    position: relative; /* Needed for the pseudo-element */
+    margin-right: -1px;
+    margin-bottom: -3px;
+}
+
+/* Add a pseudo-element for the left side black background */
+.footer::before {
+    content: ''; /* No text content, just a background */
+    position: absolute;
+    left: -20%;
+    top: 0;
+    width: 40%; /* Black background on the left side */
+    height: 100%;
+    background-color: black; /* Black background */
+    z-index: 0; 
+    /* Ensures the black background stays behind the content */
+    padding-left: 2px;
+    margin-left: 3px;
+    left: -22px;
+}
+
+/* Styling for the <h4> on the left */
+.footer h4 {
+    margin-left: 50px; /* Slight margin from the left */
+    color: white;
+    z-index: 1; /* Ensure h4 stays above the black background */
+}
+
+/* Styling for the <p> on the right */
+.footer p {
+    margin-right:400px;
+    color: white;
+    z-index: 1; /* Ensure p stays above the background */
+}
+
+/* Select the Contact us link using its class 'us' */
+#contactUs {
+    color: white;            /* Change the text color to white */
+    text-decoration: none;   /* Remove the underline */
+    font-weight: bold;       /* Make the text bold */
+}
+
+
+.bottom {
+    background-color: #6B8686; 
+    color: white;  
+    padding: 5px 20px; 
+    text-align: center;  
+    font-size: 14px; 
+    margin-right: -1.5px;
+    margin-bottom: 0;
+    left: -30px;
+}
+
+
+/* Style the links to be white with no decoration */
+#home2, #about2, #serv2 {
+    color: white; /* Make the text white */
+    text-decoration: none; /* Remove the underline */
+    display: block; /* Stack the links vertically */
+    margin: 5px 0; /* Add spacing between the links */
+}
+
+/* Optional: If you want to add hover effect */
+#home2:hover, #about2:hover, #serv2:hover {
+    color: goldenrod; /* Change color when hovered */
+}
+
+
+/* Tablet styles */
+@media (max-width: 992px) {
+
+    nav ul {
+        font-size: small;
+    }
+
+    .text-overvid h1{
+        white-space: nowrap; 
+    }
+
+
+
+    .service-grid {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+    
+    .service {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .feature {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Feature section fixes for tablet */
+    .feature img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .feature .awel,
+    .feature .tani,
+    .feature .talet,
+    .feature .rabe3,
+    .feature .ames,
+    .feature .sades {
+        text-align: center;
+        padding: 15px;
+        grid-column: span 3;
+
+    }
+    
+    .feature button {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        position: relative;
+        left: 0;
+        transform: none;
+        grid-column: span 2;
+    }
+    
+    .client {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    
+    .client img {
+        margin: 0 auto 20px;
+    }
+    
+    .client h2 {
+        margin: 20px 0;
+        padding-bottom: 30px;
+        position: static;
+    }
+    
+    .client ul {
+        margin-left: 0;
+    }
+
+    .client li {
+        margin-left: 20px;
+        font-size: small;
+    }
+    
+    .client button {
+        position: static;
+        margin: 20px auto;
+    }
+
+    .footer h4 {
+        margin-left: -2px;
+        font-size: small;
+        white-space: nowrap;
+    }
+
+    .footer p {
+        margin-left: 200px;
+        white-space: nowrap; 
+    }
+}
+
+
+
+
+    @media (max-width: 768px) {
+        /* Navigation */
+        nav ul {
+            font-size: small;
+            gap: 8px;
+            padding: 5px;
+        }
+    
+        /* Video text */
+        .text-overvid h1 {
+            white-space: nowrap;
+            font-size: 24px;
+            bottom: 220px;
+        }
+        .text-overvid h4 {
+            font-size: 16px;
+            bottom: 180px;
+        }
+    
+        /* Services section */
+        .le_kol_el_boxes {
+            flex-direction: column;
+            padding: 20px 10px;
+        }
+        .service {
+            width: 100%;
+            margin: 0;
+            padding: 0 10px 20px;
+            order: 1;
+        }
+        .service h1 {
+            text-align: center;
+            margin-left: 0;
+            font-size: medium;
+        }
+        .service pre {
+            white-space: pre-line;
+            text-align: center;
+            margin: 10px 0;
+            font-size: small;
+        }
+        .service-grid {
+            width: 100%;
+            order: 2;
+            grid-template-columns: 1fr;
+        }
+        .btn_exp {
+            display: block;
+            margin: 15px auto;
+            width: fit-content;
+        }
+        .box-ketaba {
+            height: auto;
+            min-height: 220px;
+            margin-bottom: 15px;
+        }
+        .View-debt, 
+        .View-equity, 
+        .View-finance, 
+        .View-more {
+            min-width: 40px;
+            display: inline-block;
+            margin: 15px auto;
+            padding: 8px 16px;
+        }
+    
+        /* Feature section - now vertical stack */
+        .feature {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 30px 10px;
+        }
+        .feature img {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+        .feature p {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+        .feature button {
+            margin: 15px auto 0;
+            padding: 8px 16px;
+            width: fit-content;
+        }
+    
+        /* Client section */
+        .client {
+            flex-direction: column;
+            padding: 25px 15px;
+        }
+        .client img {
+            margin: 0 auto 15px;
+            max-width: 90%;
+        }
+        .client h2 {
+            margin: 15px 0;
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+        .client ul {
+            margin-left: 0;
+        }
+        .client li {
+            margin-left: 15px;
+            font-size: small;
+        }
+        .client button {
+            margin: 15px auto;
+            padding: 8px 16px;
+        }
+    
+        /* Footer */
+        .footer {
+            flex-direction: column;
+        }
+        
+        .footer p {
+            margin-left: 500px;
+            white-space: nowrap;
+            font-size: xx-small;
+            margin-top:-500px;
+        }
+        .footer h4 {
+            font-size: small;
+            margin-right: 250px;
+            text-align: center;
+            white-space: normal;
+            margin-top: 10px;
+        }
+    
+        /* Other adjustments */
+        .el_logo {
+            padding-left: 10%;
+        }
+        .el_logo h1 {
+            font-size: 24px;
+        }
+        .videoo {
+            height: 400px;
+        }
+    }
