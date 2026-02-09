@@ -3,6 +3,10 @@
 ## Preview
 
 ![Lola Group Website Preview](Screenshot%202026-02-06%20225345.png)
+![Preview 1](Screenshot%202026-02-09%20193637.png)
+![Preview 2](Screenshot%202026-02-09%20193646.png)
+![Preview 3](Screenshot%202026-02-09%20193654.png)
+
 
 ## Overview
 
